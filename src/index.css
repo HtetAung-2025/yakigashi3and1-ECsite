@@ -70,11 +70,33 @@ header
     align-items: center;
     gap: 50px;
 }
+/**/
+/* underline */
+.navbar .navlink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  border-radius: 5px;
+  background-color:var(--accent-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* hover */
+.navbar .navlink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/**/
 .navlink
 {
   font-size: 18px;
   font-weight: 700;
   color: var(--accent-color);
+  position: relative;
 }
 .otherlink
 {
