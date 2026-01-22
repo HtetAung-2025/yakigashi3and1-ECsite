@@ -22,6 +22,7 @@ import Vanila from "./pages/Vanila.jsx";
 import Ichogo from "./pages/Ichigo.jsx";
 import Giftbox from "./pages/Gift.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import { Register } from "./pages/Register.jsx";
 function App() {
   return (
 <CartProvider>
@@ -45,6 +46,7 @@ function App() {
          <Route path="/vanila" element={<Vanila/>}/>
          <Route path="/ichigo" element={<Ichogo/>}/>
          <Route path="/giftbox" element={<Giftbox/>}/>
+         <Route path="/register" element={<Register/>}/>
       </Routes>
       <ToastContainer 
           position="bottom-right" 

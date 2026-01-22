@@ -42,7 +42,7 @@ export default function Cart() {
 
             <div className="totalprice">
               <h2>合計金額： {totalPrice} ¥</h2>
-              <Link to="#" className="btn">購入手続きへ<span>▶</span></Link>
+              <Link to="/register" className="btn">購入手続きへ<span>▶</span></Link>
             </div>
           </div>
         )}

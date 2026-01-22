@@ -82,7 +82,7 @@ export default
           </div>
           <div className="formgroup">
             <p className="formleftText">ご住所</p>
-            <input type="email" name="mail" id="mail" placeholder="例：030　3333　3333　" className="address"/>
+            <input type="email" name="mail" id="mail" placeholder="例：〇〇区。。。" className="address"/>
           </div>
           <div className="formgroup">
             <p className="formleftText">性別</p>
