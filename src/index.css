@@ -1233,7 +1233,7 @@ section.Toastify {
 .form .kinds
 {
   width: 300px;
-  height: 40px;
+  height: 50px;
 }
 .form .formleftText
 {
@@ -1266,10 +1266,12 @@ textarea
 .Fname
 {
   width: 145px;
+  height: 50px;
 }
 .email,.phone,.address
 {
   width: 300px;
+  height: 50px;
 }
 .formgroup button
 {
