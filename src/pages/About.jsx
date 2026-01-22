@@ -94,10 +94,15 @@ export default
                         </div>
                         <img src={shopmap} alt="" />
                     </div>
-                    <Link to={"/ingredients"} className="btn">店舗の地図を見る<span>▶</span></Link>
+                   <a href="https://share.google/wCaMVEQG32OLhbYt6" className="btn"> 店舗の地図を見る<span>▶</span></a>
                 </div>
             </section>
-            <img src={textimg} alt="" className="textimg fadeLoop" />
+            <div className="textimg-wrapper">
+                <div className="textimg-track">
+                    <img src={textimg} alt="Text Image 1" className="textimg" />
+                    <img src={textimg} alt="Text Image 2" className="textimg" />
+                </div>
+            </div>
             <section className="reviews" id="reviews">
                 <div className="news-container container">
                     <div className="heading">
@@ -109,11 +114,16 @@ export default
                         <p className="paragraph">私にとって頑張った時、とっておきのご褒美はやっぱり３＆１のおやつ！甘すぎないちょうどいいおやつに、エナジーチャージ！されて、「よ〜し、また頑張ろう！」と明るく優しい気持ちに戻って来れる！子供達の「一口ちょうだい！」「もう一口！」がとまらなくて全部食べられちゃう子供（笑）季節にぴったり色んな味がうれしい！私の元気の原です。（３０代の女性）</p>
                     </div>
                     <div className="toProduct">
-                        <p>こだわりの詰まったスイーツの紹介は商品情報をご覧ください！</p>
+                       <p><NavHashLink smooth to="/#products" >こだわりの詰まったスイーツの紹介は商品情報をご覧ください！</NavHashLink></p>
                     </div>
                 </div>
             </section>
-            <img src={yakigashitext} alt="" className="textimg fadeLoop" />
+            <div className="textimg-wrapper">
+                <div className="textimg-track">
+                    <img src={yakigashitext} alt="Text Image 1" className="textimg" />
+                    <img src={yakigashitext} alt="Text Image 2" className="textimg" />
+                </div>
+            </div>
             <Footer />
         </div>
     )

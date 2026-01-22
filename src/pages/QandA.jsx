@@ -55,34 +55,34 @@ export default
             <p className="formleftText">返信のご希望<span>必項</span></p>
             <div className="radioselect">
               <label className="paragraph">
-                        <input type="radio" name="delivery" value="希望する" />
-                        希望する
-                    </label>
+                <input type="radio" name="delivery" value="希望する" />
+                希望する
+              </label>
 
-                    <label className="paragraph">
-                        <input type="radio" name="delivery" value="希望しない" />
-                        希望しない
-                    </label>
+              <label className="paragraph">
+                <input type="radio" name="delivery" value="希望しない" />
+                希望しない
+              </label>
             </div>
           </div>
           <div className="formgroup">
             <p className="formleftText">お名前<span>必項</span></p>
             <div className="formname">
-            <input type="text" className="Fname" placeholder="姓"/>
-            <input type="text" className="Fname" placeholder="名"/>
+              <input type="text" className="Fname" placeholder="姓" />
+              <input type="text" className="Fname" placeholder="名" />
             </div>
           </div>
           <div className="formgroup">
             <p className="formleftText">メールアドレス<span>必項</span></p>
-            <input type="email" name="mail" id="mail" placeholder="メールアドレス" className="email"/>
+            <input type="email" name="mail" id="mail" placeholder="メールアドレス" className="email" />
           </div>
           <div className="formgroup">
             <p className="formleftText">電話番号</p>
-            <input type="email" name="mail" id="mail" placeholder="例：030　3333　3333　" className="phone"/>
+            <input type="email" name="mail" id="mail" placeholder="例：030　3333　3333　" className="phone" />
           </div>
           <div className="formgroup">
             <p className="formleftText">ご住所</p>
-            <input type="email" name="mail" id="mail" placeholder="例：〇〇区。。。" className="address"/>
+            <input type="email" name="mail" id="mail" placeholder="例：〇〇区。。。" className="address" />
           </div>
           <div className="formgroup">
             <p className="formleftText">性別</p>
@@ -107,7 +107,12 @@ export default
           </div>
         </div>
       </section>
-      <img src={yakigashitext} alt="" className="textimg fadeLoop" />
+      <div className="textimg-wrapper">
+        <div className="textimg-track">
+          <img src={yakigashitext} alt="Text Image 1" className="textimg" />
+          <img src={yakigashitext} alt="Text Image 2" className="textimg" />
+        </div>
+      </div>
       <Footer />
     </div>
   )

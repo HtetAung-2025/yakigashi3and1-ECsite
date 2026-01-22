@@ -25,7 +25,7 @@ export function Register() {
                 <section className="content" id="content">
                     <div className="content-container container">
                         <div className="heading">
-                            <h1 lang="en"　id="register">Register</h1>
+                            <h1 lang="en" id="register">Register</h1>
                             <p>購入手続き</p>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export function Register() {
                             <p className="formleftText">ご連絡先<span>必項</span></p>
                             <input type="email" name="mail" id="mail" placeholder="メールアドレス" className="email" />
                         </div>
-                         <div className="formgroup">
+                        <div className="formgroup">
                             <p className="formleftText">ご届け先<span>必項</span></p>
                             <input type="email" name="mail" id="mail" placeholder="東京都、新宿区　４-3-〇〇ビル" className="address" />
                         </div>
@@ -52,7 +52,7 @@ export function Register() {
                             <p className="formleftText">電話番号<span>必項</span></p>
                             <input type="email" name="mail" id="mail" placeholder="例：030　3333　3333　" className="phone" />
                         </div>
-                       
+
                         <div className="formgroup">
                             <p className="formleftText">配送方法<span>必項</span></p>
                             <select className="kinds">
@@ -77,7 +77,12 @@ export function Register() {
                     </div>
                 </section>
             </main>
-            <img src={yakigashitext} alt="" className="textimg fadeLoop" />
+            <div className="textimg-wrapper">
+                <div className="textimg-track">
+                    <img src={yakigashitext} alt="Text Image 1" className="textimg" />
+                    <img src={yakigashitext} alt="Text Image 2" className="textimg" />
+                </div>
+            </div>
             <Footer />
         </>
     )

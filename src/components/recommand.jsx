@@ -48,7 +48,12 @@ export default function Recommand() {
                 </div>
                 <Link to={"/ingredients"} className="btn">素材のこだわり<span>▶</span></Link>
             </section>
-            <img src={yakigashitext} alt="" className="textimg fadeLoop" />
+            <div className="textimg-wrapper">
+                <div className="textimg-track">
+                    <img src={yakigashitext} alt="Text Image 1" className="textimg" />
+                    <img src={yakigashitext} alt="Text Image 2" className="textimg" />
+                </div>
+            </div>
         </>
     )
 }

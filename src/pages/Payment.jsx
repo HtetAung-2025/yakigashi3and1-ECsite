@@ -61,8 +61,13 @@ export default function Payment() {
           <img src={amax} alt="" />
         </div>
       </section>
-      <img src={yakigashitext} alt="" className="textimg fadeLoop" />
-      <Footer />
-    </div>
-  ) 
+          <div className="textimg-wrapper">
+            <div className="textimg-track">
+              <img src={yakigashitext} alt="Text Image 1" className="textimg" />
+              <img src={yakigashitext} alt="Text Image 2" className="textimg" />
+            </div>
+          </div>
+          <Footer />
+        </div>
+        ) 
 }

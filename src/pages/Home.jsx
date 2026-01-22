@@ -35,7 +35,7 @@ function Home() {
             if (element) {
                 setTimeout(() => {
                     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100); 
+                }, 100);
             }
         }
     }, [hash]);
@@ -159,7 +159,10 @@ function Home() {
                         </div>
                     </div>
                     <div className="textimg-wrapper">
-                        <img src={textimg} alt="" className="textimg fadeLoop" />
+                        <div className="textimg-track">
+                            <img src={textimg} alt="Text Image 1" className="textimg" />
+                            <img src={textimg} alt="Text Image 2" className="textimg" />
+                        </div>
                     </div>
                 </section>
             </section>
@@ -189,7 +192,12 @@ function Home() {
                     <img src={story} alt="" />
                 </div>
             </section>
-            <img src={yakigashitext} alt="" className="textimg fadeLoop" />
+            <div className="textimg-wrapper">
+                <div className="textimg-track">
+                    <img src={yakigashitext} alt="Text Image 1" className="textimg" />
+                    <img src={yakigashitext} alt="Text Image 2" className="textimg" />
+                </div>
+            </div>
             <Footer />
         </div>
     );

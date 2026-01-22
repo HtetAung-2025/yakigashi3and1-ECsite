@@ -406,7 +406,13 @@ header
   margin-bottom: 1rem;
 }.textimg-wrapper {
   width: 100%;
-  overflow: hidden; /* ★超重要 */
+  overflow: hidden;
+}
+
+.textimg-track {
+  display: flex;
+  width: 200%;
+  animation: scrollLoop 10s linear infinite;
 }
 
 .textimg {
@@ -414,18 +420,15 @@ header
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
-.fadeLoop {
-  animation: fadeLoop 10s ease-in-out infinite;
-}
-
-@keyframes fadeLoop {
-  0%   { opacity: 0; transform: translateX(100px); }
-  20%  { opacity: 1; transform: translateX(0); }
-  80%  { opacity: 1; transform: translateX(0); }
-  100% { opacity: 0; transform: translateX(-100px); }
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 
@@ -1019,6 +1022,10 @@ color: white;
 .twobtn
 {
   display: flex;
+}
+.toProduct a
+{
+  color: white;
 }
 /*Access*/
 .access-left
