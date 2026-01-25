@@ -2,13 +2,27 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import { useState } from "react";
 import Footer from "../components/Footer";
 import registerimg from "../images/home/register.png"
 import yakigashitext from '../images/home/yakigashitext.jpg'
 export function Register() {
+    const [comfirmMessage, setComfirmMessage] = useState(false);
+    const handleComfirm = () => {
+        setComfirmMessage(true);
+        setTimeout(() => {
+            setComfirmMessage(false);
+        }, 4000);
+    }
     return (
         <>
             <Header />
+            {comfirmMessage && (
+                <div className="order-success-msg">
+                    <i className="ri-checkbox-circle-fill"></i>
+                    ご注文が確定しました！
+                </div>
+            )}
             <main>
                 <section className="home" id="home">
                     <div className="key-virtual container">
@@ -72,7 +86,7 @@ export function Register() {
                             </select>
                         </div>
                         <div className="formgroup">
-                            <button type="submit">注文を確定する</button>
+                            <button type="submit" onClick={handleComfirm}>注文を確定する</button>
                         </div>
                     </div>
                 </section>

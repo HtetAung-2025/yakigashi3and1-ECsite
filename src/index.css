@@ -1192,7 +1192,7 @@ color: white;
   cursor: pointer;
   border: none;
 }
-.cart-alert {
+.cart-alert,.order-success-msg {
     position: fixed;
     top: 400px;
     left: 50%;
@@ -1316,4 +1316,3 @@ textarea
 .navbar {
   display: flex;
 }
-
