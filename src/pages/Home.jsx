@@ -104,7 +104,7 @@ function Home() {
                                 <p>商品一覧</p>
                             </div>
                             <div className="paragraph">
-                                <p>焼き菓子３＆１が自信を持ってお届けする焼菓子各種をご紹介します</p>
+                                <p>焼菓子３＆１が自信を持ってお届けする焼菓子各種をご紹介します</p>
                             </div>
                         </div>
                         <Link to={"/products"} className="btn">商品一覧を見る<span>▶</span></Link>
