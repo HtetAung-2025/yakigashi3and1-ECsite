@@ -46,7 +46,7 @@ function Home() {
                 <div className="key-virtual container">
                     <div className="kv-left">
                         <div className="key-virtual-text">
-                            <h1>素材にこだわった焼き菓子で、</h1>
+                            <h1>素材にこだわった焼菓子で、</h1>
                             <p>親子のおやつ時間をもっとしあわせに</p>
                         </div>
                         <Link to={"/products"} className="btn">商品一覧を見る<span>▶</span></Link>
@@ -104,7 +104,7 @@ function Home() {
                                 <p>商品一覧</p>
                             </div>
                             <div className="paragraph">
-                                <p>焼き菓子３＆１が自信を持ってお届けする焼き菓子各種をご紹介します</p>
+                                <p>焼き菓子３＆１が自信を持ってお届けする焼菓子各種をご紹介します</p>
                             </div>
                         </div>
                         <Link to={"/products"} className="btn">商品一覧を見る<span>▶</span></Link>

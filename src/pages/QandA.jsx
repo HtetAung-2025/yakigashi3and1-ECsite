@@ -17,7 +17,7 @@ export default
             <div className="key-virtual-text">
               <h1>お問い合わせ</h1>
               <h1>よくある質問など。。。</h1>
-              <h1>焼き菓子 3&1</h1>
+              <h1>焼菓子 3&1</h1>
             </div>
           </div>
           <img src={faq} alt="" className="kvimg" />

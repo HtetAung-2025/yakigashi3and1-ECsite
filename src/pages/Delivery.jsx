@@ -17,7 +17,7 @@ export default
             <div className="key-virtual-text">
               <h1>配送方法について</h1>
               <h1>常温、クール便</h1>
-              <h1>焼き菓子 3&1</h1>
+              <h1>焼菓子 3&1</h1>
             </div>
           </div>
           <img src={deliveryimg} alt="" className="kvimg" />

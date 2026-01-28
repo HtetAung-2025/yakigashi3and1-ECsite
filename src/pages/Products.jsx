@@ -26,7 +26,7 @@ export default
                     <div className="kv-left">
                         <div className="key-virtual-text">
                             <h1>３＆１の商品一覧</h1>
-                            <h1>焼き菓子３＆１の自慢ケーキ</h1>
+                            <h1>焼菓子３＆１の自慢ケーキ</h1>
                         </div>
                     </div>
                     <img src={kvimg} alt="" className="kvimg" />
@@ -83,7 +83,7 @@ export default
                 <div className="heading">
                     <h1 lang="en">Ingredients</h1>
                     <p>こだわった素材について<br />
-                        素材にこだわって手作り感ある焼き菓子３＆１</p>
+                        素材にこだわって手作り感ある焼菓子３＆１</p>
                 </div>
                 <Link to={"/ingredients"} className="btn">素材のこだわり<span>▶</span></Link>
             </section>

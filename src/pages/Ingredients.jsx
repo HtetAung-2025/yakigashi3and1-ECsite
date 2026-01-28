@@ -22,7 +22,7 @@ export default function Ingredients() {
             <div className="key-virtual-text">
               <h1>３＆１のこだわり素材</h1>
               <h1>３＆１の自慢のオリジナル</h1>
-              <h1>焼き菓子</h1>
+              <h1>焼菓子</h1>
             </div>
           </div>
           <img src={kvimg} alt="" className="kvimg" />

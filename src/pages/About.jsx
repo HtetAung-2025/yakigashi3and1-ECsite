@@ -22,7 +22,7 @@ export default
                     <div className="kv-left">
                         <div className="key-virtual-text">
                             <h1>店舗情報</h1>
-                            <h1>焼き菓子３＆１</h1>
+                            <h1>焼菓子３＆１</h1>
                         </div>
                     </div>
                     <img src={shop} alt="" className="kvimg" />

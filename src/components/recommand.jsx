@@ -44,7 +44,7 @@ export default function Recommand() {
                 <div className="heading">
                     <h1 lang="en">Ingredients</h1>
                     <p>こだわった素材について<br />
-                        素材にこだわって手作り感ある焼き菓子３＆１</p>
+                        素材にこだわって手作り感ある焼菓子３＆１</p>
                 </div>
                 <Link to={"/ingredients"} className="btn">素材のこだわり<span>▶</span></Link>
             </section>
