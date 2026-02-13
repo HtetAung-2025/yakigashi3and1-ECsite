@@ -141,7 +141,7 @@ header
     background-size: cover;
     background-position: center;
 }
-.key-virtual
+.key-virtual,.key-virtual-product
 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -297,7 +297,6 @@ header
 .ingredients img
 {
   border-radius: 10px;
-  cursor: pointer;
   transition: transform 0.3s ease;
   width: 100%;
   height: 150px;
@@ -732,7 +731,15 @@ footer .container
   }
   .key-virtual
   {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-top: 5rem;
+    justify-items: center;
+  }
+  .key-virtual-product {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 5rem;
     justify-items: center;
@@ -800,7 +807,7 @@ footer .container
 }
 .about
 {
-  height: 75vh;
+  height: 90vh;
 }
 .about-container{
   display: flex;
