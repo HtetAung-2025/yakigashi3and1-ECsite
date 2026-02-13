@@ -24,13 +24,13 @@ export default function Lemoncake() {
     <div>
       <Header />
       <section className="home" id="home">
-        <div className="key-virtual container">
+        <div className="key-virtual-product container">
           <img src={lemoncake} alt="" className="kvimg" />
           <div className="kv-left">
             <div className="key-virtual-text">
-              <h1>瀬戸内レモンケーキ</h1>
+              <h1>{productData.name}</h1>
               <p lang="en">organic setouchi lemon cake</p>
-              <h1 lang="en">350¥ <span>（税込）</span></h1>
+              <h1 lang="en">¥{productData.price} <span>（税込）</span></h1>
               <p className="notice">※一個の価格です。</p>
               <button className="btn" onClick={handleAdd}>
           カートに入れる<span>▶</span>

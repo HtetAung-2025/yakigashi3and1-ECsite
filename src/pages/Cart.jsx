@@ -24,7 +24,7 @@ export default function Cart() {
                 <img src={item.image} alt={item.name} />
                 <div style={{ flex: 1 }}>
                   <h3>{item.name}</h3>
-                  <p className="price">{item.price} ¥</p>
+                  <p className="price">¥{item.price} </p>
 
 
                   <div className="add-minus">
@@ -41,7 +41,7 @@ export default function Cart() {
             ))}
 
             <div className="totalprice">
-              <h2>合計金額： {totalPrice} ¥</h2>
+              <h2>合計金額： ¥{totalPrice} </h2>
               <Link to="/register" className="btn">購入手続きへ<span>▶</span></Link>
             </div>
           </div>

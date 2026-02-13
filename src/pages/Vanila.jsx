@@ -23,13 +23,13 @@ export default function Vanila() {
     <div>
       <Header />
       <section className="home" id="home">
-        <div className="key-virtual container">
+        <div className="key-virtual-product container">
           <img src={vanila} alt="" className="kvimg" />
           <div className="kv-left">
             <div className="key-virtual-text">
-              <h1>ブールドネージュ（バニラ）</h1>
+              <h1>{productData.name}</h1>
               <p lang="en">Beurre de neige (vanila)</p>
-              <h1 lang="en">250¥ <span>（税込）</span></h1>
+              <h1 lang="en">¥{productData.price} <span>（税込）</span></h1>
               <p className="notice">※一袋の価格です。</p>
               <button className="btn" onClick={handleAdd}>
           カートに入れる<span>▶</span>

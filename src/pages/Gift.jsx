@@ -12,7 +12,7 @@ export default function Giftbox() {
   const { addToCart } = useCart(); 
   const productData = {
     id: "gift-09",
-    name: "ギフトセット（３ヶ月１回特別）",
+    name: "ギフトセット(３ヶ月１回特別)",
     price: 3000,
     image: giftbox
   };
@@ -24,13 +24,13 @@ export default function Giftbox() {
     <div>
       <Header />
       <section className="home" id="home">
-        <div className="key-virtual container">
+        <div className="key-virtual-product container">
           <img src={giftbox} alt="" className="kvimg" />
           <div className="kv-left">
             <div className="key-virtual-text">
-              <h1>ギフトセット（３ヶ月１回特別）</h1>
+              <h1>{productData.name}</h1>
               <p lang="en">Gift Box</p>
-              <h1 lang="en">3000¥ <span>（税込）</span></h1>
+              <h1 lang="en">¥{productData.price} <span>（税込）</span></h1>
               <p className="notice">※一セットの価格です。</p>
               <button className="btn" onClick={handleAdd}>
           カートに入れる<span>▶</span>
